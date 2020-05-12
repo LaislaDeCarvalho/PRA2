@@ -1,5 +1,64 @@
+@Entity(tableName = "hards")
+
 public class HardSkill {
-public HardSkill () {
+
+private int hId;
+private String hCreationDate;
+private String hName;
+private String hProvelt;
+private Double hValue;
+
+@PrimaryKey(autoGenerate = true)
+@NonNull
+@ColumnInfo(name = "hardsId")
+private int hId;
+
+public Hardskill(@Nullable String creationDate, String name, String provelt, Double value) {
+hCreationDate = creationDate;
+hName = name;
+hProvelt = provelt;
+hValue = value;
+
+}
+
+public int getId() {
+return hId;
+}
+
+public void setId(int id) {
+hId = id;
+}
+
+public String getCreationDate() {
+return hCreationDate;
+}
+
+public void setCreationDate(String creationDate) {
+hCreationDate = creationDate;
+}
+
+public String getName() {
+return hName;
+}
+
+public void setName(String name) {
+hName = name;
+}
+
+public String getProvelt() {
+return hProvelt;
+}
+
+public void setProvelt(String provelt) {
+hProvelt = provelt;
+}
+
+public Double getValue() {
+hValue;
+}
+
+public void setValue(Double value) {
+hValue = value;
 }
 
 }
